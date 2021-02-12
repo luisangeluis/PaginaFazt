@@ -6,6 +6,13 @@
 }
 
 
+html{
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+
+}
+
 body{
 
 
@@ -18,6 +25,8 @@ body{
 	*/
 	font-size: 16px;
 	font-family: 'Oswald', sans-serif;
+
+	height: 100%;
 
 }
 
@@ -61,6 +70,35 @@ ul{
 
 .main_nav-ul li{
 	padding: 20px;
+
+}
+
+
+
+
+.main_nav-ul li:hover, active{
+	padding: 21px;
+	border-bottom: 1px solid white;
+	background-color: #160D0D;
+}
+
+.main_nav-ul a:link, visited{
+	
+	text-decoration: none;
+	color:white;
+}
+	
+/*SHOWCASE*/
+
+.show-case{
+	width: 100%;
+	height: 500px;
+	background: url('../images/showcase2.jpg') no-repeat center center/cover;
+	padding-bottom: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
 
 }
 
