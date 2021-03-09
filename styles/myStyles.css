@@ -34,6 +34,8 @@ a{
 	text-decoration: none;
 }
 */
+
+
 .main_nav-ul a{	
 	text-decoration: none;
 	color:white;
@@ -92,7 +94,15 @@ ul{
 	text-decoration: none;
 	color:white;
 }
-	
+
+.menu-btn{
+	position: absolute;
+	right: 30px;
+	top: 25px;
+	cursor:pointer;
+	z-index: 2;
+}
+
 /*SHOWCASE*/
 
 hr{
@@ -102,7 +112,7 @@ hr{
 	width: 100%;
 	height: 500px;
 	background: url('../images/showcase2.jpg') no-repeat center center/cover;
-	padding-bottom: 50px;
+	padding: 20px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -263,6 +273,7 @@ hr{
 }
 .footer-container ul li a{
 	text-decoration: none;
+	color: white;
 }
 
 /*FOOTER*/
@@ -279,8 +290,38 @@ hr{
 	body{
 		background-color: red;
 	}
+
+	.nav-main  .main_nav-ul{
+		display: block;
+		position: absolute;
+		top:0;
+		left: 0;
+		background-color: #100f11;
+		height: 100%;
+		transform: translateX(-20px);
+		padding: 30px;
+		opacity: .9;
+	}
+	.nav-main  .main_nav-ul li{
+		padding: 20px;
+		font-weight: bold;
+	}
 	
 	.news-cards{
+		grid-template-columns: repeat(2,1fr);
+	}
+
+	.cards-banner-one .content{
+
+		width: 85%;
+		
+	}
+
+	.cards-banner-two .content{
+		width: 85%;
+	}
+
+	.footer-container{
 		grid-template-columns: repeat(2,1fr);
 	}
 	
